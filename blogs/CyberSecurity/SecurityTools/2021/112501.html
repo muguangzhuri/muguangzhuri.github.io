@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kali 安装OpenVAS | 暮光烛日</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicons.ico">
+    <meta name="description" content="暮光烛日博客">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.cdd75a34.css" as="style"><link rel="preload" href="/assets/js/app.250a1e0a.js" as="script"><link rel="preload" href="/assets/js/3.03437c4e.js" as="script"><link rel="preload" href="/assets/js/1.2eac023a.js" as="script"><link rel="preload" href="/assets/js/14.31f4957c.js" as="script"><link rel="prefetch" href="/assets/js/10.f00be53f.js"><link rel="prefetch" href="/assets/js/11.6f42d7d6.js"><link rel="prefetch" href="/assets/js/12.0715abbc.js"><link rel="prefetch" href="/assets/js/13.22e051ed.js"><link rel="prefetch" href="/assets/js/15.3da1b73b.js"><link rel="prefetch" href="/assets/js/16.07d3203a.js"><link rel="prefetch" href="/assets/js/17.cb4371e6.js"><link rel="prefetch" href="/assets/js/18.7ad0cce2.js"><link rel="prefetch" href="/assets/js/19.04c316eb.js"><link rel="prefetch" href="/assets/js/20.6cb684df.js"><link rel="prefetch" href="/assets/js/21.c6f064b2.js"><link rel="prefetch" href="/assets/js/22.6c56ca0e.js"><link rel="prefetch" href="/assets/js/23.23606608.js"><link rel="prefetch" href="/assets/js/24.2446f1e9.js"><link rel="prefetch" href="/assets/js/25.8ade1ca9.js"><link rel="prefetch" href="/assets/js/26.f6d3103a.js"><link rel="prefetch" href="/assets/js/27.bbdf586b.js"><link rel="prefetch" href="/assets/js/28.aa24ce63.js"><link rel="prefetch" href="/assets/js/29.bb44ed29.js"><link rel="prefetch" href="/assets/js/30.e1a3cbee.js"><link rel="prefetch" href="/assets/js/31.bd42b78a.js"><link rel="prefetch" href="/assets/js/32.411e6bb5.js"><link rel="prefetch" href="/assets/js/4.8256da3b.js"><link rel="prefetch" href="/assets/js/5.28c097e0.js"><link rel="prefetch" href="/assets/js/6.5ddc16d2.js"><link rel="prefetch" href="/assets/js/7.70ac515b.js"><link rel="prefetch" href="/assets/js/8.37e304ac.js"><link rel="prefetch" href="/assets/js/9.f06eeb47.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cdd75a34.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1aefc0b4><div data-v-1aefc0b4><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1aefc0b4 data-v-1aefc0b4><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>暮光烛日</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>暮光烛日博客</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>木子</span>
+            
+          <span data-v-25ba6db2>2020 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-1aefc0b4><header class="navbar" data-v-1aefc0b4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logos.png" alt="暮光烛日" class="logo"> <span class="site-name">暮光烛日</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      类别
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/新技术/" class="nav-link"><i class="undefined"></i>
+  新技术
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安全工具/" class="nav-link"><i class="undefined"></i>
+  安全工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/问题解决/" class="nav-link"><i class="undefined"></i>
+  问题解决
+</a></li><li class="dropdown-item"><!----> <a href="/categories/category1/" class="nav-link"><i class="undefined"></i>
+  category1
+</a></li><li class="dropdown-item"><!----> <a href="/categories/category2/" class="nav-link"><i class="undefined"></i>
+  category2
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Hackers/" class="nav-link"><i class="undefined"></i>
+  Hackers
+</a></li><li class="dropdown-item"><!----> <a href="/docs/pdf/" class="nav-link"><i class="undefined"></i>
+  PDF
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/muguangzhuri" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1aefc0b4></div> <aside class="sidebar" data-v-1aefc0b4><div class="personal-info-wrapper" data-v-39576ba9 data-v-1aefc0b4><img src="/avatars.png" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    木子
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>22</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>9</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      类别
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/新技术/" class="nav-link"><i class="undefined"></i>
+  新技术
+</a></li><li class="dropdown-item"><!----> <a href="/categories/安全工具/" class="nav-link"><i class="undefined"></i>
+  安全工具
+</a></li><li class="dropdown-item"><!----> <a href="/categories/问题解决/" class="nav-link"><i class="undefined"></i>
+  问题解决
+</a></li><li class="dropdown-item"><!----> <a href="/categories/category1/" class="nav-link"><i class="undefined"></i>
+  category1
+</a></li><li class="dropdown-item"><!----> <a href="/categories/category2/" class="nav-link"><i class="undefined"></i>
+  category2
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Hackers/" class="nav-link"><i class="undefined"></i>
+  Hackers
+</a></li><li class="dropdown-item"><!----> <a href="/docs/pdf/" class="nav-link"><i class="undefined"></i>
+  PDF
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/muguangzhuri" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2></h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>木子</span>
+            
+          <span data-v-25ba6db2>2020 - </span>
+          2022
+        </a></span></div></div> <div data-v-1aefc0b4><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">Kali 安装OpenVAS</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>木子</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="kali-安装openvas"><a href="#kali-安装openvas" class="header-anchor">#</a> <a href="https://zhuanlan.zhihu.com/p/117641338?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=1214245074940506112&amp;utm_content=group1_article&amp;utm_campaign=shareopn" target="_blank" rel="noopener noreferrer">Kali 安装OpenVAS<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h1> <h2 id="常规命令"><a href="#常规命令" class="header-anchor">#</a> 常规命令</h2> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo apt-get install gvm 	安装gvm
+sudo gvm-setup 			初始化gvm
+sudo gvm-check-setup		检查openvas 是否安装成功
+sudo gvm-feed-update		升级漏洞库
+sudo gvm-start			启动openvas
+sudo -u _gvm gvmd --user=admin --new-password=123456
+				修改web 账号admin 密码为123456
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="问题五-创建new-target-时-port-list-不可选-并且save-时报错。"><a href="#问题五-创建new-target-时-port-list-不可选-并且save-时报错。" class="header-anchor">#</a> *<strong>问题五：创建New Target 时，Port List 不可选，并且save 时报错。*</strong></h3> <div class="language-text line-numbers-mode"><pre class="language-text"><code>Failed to find port_list '33d0cd82-57c6-11e1-8ed1-406186ea4fc5'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/images/blogs/CyberSecurity/SecurityTools/Kali%20%E5%AE%89%E8%A3%85OpenVAS.assets/v2-f5e150f59935114bab7eecab28dcfe0f_720w.jpg" alt="img"></p> <p>查看版本</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>┌──(ajest zh-CN)-[/usr/share]
+└─$ gsad --version                             
+Oops, secure memory pool already initialized
+Greenbone Security Assistant 21.4.3
+      
+┌──(ajest zh-CN)-[/usr/share]
+└─$ gvmd --version
+Greenbone Vulnerability Manager 21.4.4
+Manager DB revision 242
+Copyright (C) 2009-2021 Greenbone Networks GmbH
+License: AGPL-3.0-or-later
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+
+┌──(ajest zh-CN)-[/usr/share]
+└─$ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>查看配置文件</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>┌──(ajest zh-CN)-[~]
+└─$ tree /var/lib/gvm/data-objects/gvmd/21.04 
+/var/lib/gvm/data-objects/gvmd/21.04
+├── configs
+├── port_lists
+└── report_formats
+
+3 directories, 0 files
+
+┌──(ajest zh-CN)-[~]
+└─$ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>直接拷贝配置文件</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>┌──(ajest zh-CN)-[/var/lib/gvm/data-objects/gvmd]
+└─$ sudo mv /mnt/data/课程环境/渗透测试/扫描技术/OpenVAS/21.04 .        
+
+┌──(ajest zh-CN)-[/var/lib/gvm/data-objects/gvmd]
+└─$ tree 21.04
+21.04
+├── configs
+│   ├── base-d21f6c81-2b88-4ac1-b7b4-a2a9f2ad4663.xml
+│   ├── discovery-8715c877-47a0-438d-98a3-27c7a6ab2196.xml
+│   ├── empty-085569ce-73ed-11df-83c3-002264764cea.xml
+│   ├── full-and-fast-daba56c8-73ec-11df-a475-002264764cea.xml
+│   ├── host-discovery-2d3f051c-55ba-11e3-bf43-406186ea4fc5.xml
+│   ├── policy_euleros_20200909_9f822ad3-9208-4e02-ac03-78dce3ca9a23.xml
+│   ├── policy_gaussdb_20200909_61327f09-8a54-4854-9e1c-16798285fb28.xml
+│   ├── policy-gaussdbkernel-2eec8313-fee4-442a-b3c4-fa0d5dc83d61.xml
+│   ├── policy-huawei-datacom-aab5c4a1-eab1-4f4e-acac-8c36d08de6bc.xml
+│   ├── policy-it-grundschutz-c4b7c0cb-6502-4809-b034-8e635311b3e6.xml
+│   ├── policy-opengauss-c2b049f9-6d3d-45be-871f-2252895ed9e8.xml
+│   └── system-discovery-bbca7412-a950-11e3-9109-406186ea4fc5.xml
+├── port_lists
+│   ├── all-iana-assigned-tcp-33d0cd82-57c6-11e1-8ed1-406186ea4fc5.xml
+│   ├── all-iana-assigned-tcp-and-udp-4a4717fe-57d2-11e1-9a26-406186ea4fc5.xml
+│   └── all-tcp-and-nmap-top-100-udp-730ef368-57e2-11e1-a90f-406186ea4fc5.xml
+└── report_formats
+    ├── anonymous-xml-5057e5cc-b825-11e4-9d0e-28d24461215b.xml
+    ├── csv-results-c1645568-627a-11e3-a660-406186ea4fc5.xml
+    ├── itg-77bd6c4a-1f62-11e1-abf0-406186ea4fc5.xml
+    ├── pdf-c402cc3e-b531-11e1-9163-406186ea4fc5.xml
+    ├── txt-a3810a62-1f62-11e1-9219-406186ea4fc5.xml
+    └── xml-a994b278-1f62-11e1-96ac-406186ea4fc5.xml
+
+3 directories, 21 files
+
+┌──(ajest zh-CN)-[/var/lib/gvm/data-objects/gvmd]
+└─$ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p>重启gvm</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code> sudo gvm-stop
+ sudo gvm-start
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="/images/blogs/CyberSecurity/SecurityTools/Kali%20%E5%AE%89%E8%A3%85OpenVAS.assets/v2-2f1d6f20d634e7b004c9f61c52ac0ddb_720w.jpg" alt="img"></p> <h3 id="问题四-postgresql-version-版本不适应"><a href="#问题四-postgresql-version-版本不适应" class="header-anchor">#</a> *<strong>问题四：PostgreSQL version 版本不适应*</strong></h3> <div class="language-text line-numbers-mode"><pre class="language-text"><code>┌──(ajest zh-CN)-[~]
+└─$ sudo gvm-setup                                    
+
+[&gt;] Starting PostgreSQL service
+[-] ERROR: The default PostgreSQL version (13) is not 14 that is required by libgvmd
+[-] ERROR: Use pg_upgradecluster to update your PostgreSQL cluster
+       
+┌──(ajest zh-CN)-[~]
+└─$                                
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="/images/blogs/CyberSecurity/SecurityTools/Kali%20%E5%AE%89%E8%A3%85OpenVAS.assets/v2-976bb28b118868a833b21357ff1a5529_720w.png" alt="img"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo apt-get purge postgresql-13
+sudo apt-get purge postgresql-14
+sudo apt-get install gvm
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="问题三-severity-0-0-log"><a href="#问题三-severity-0-0-log" class="header-anchor">#</a> *<strong>问题三：Severity 0.0 log*</strong></h3> <p><img src="/images/blogs/CyberSecurity/SecurityTools/Kali%20%E5%AE%89%E8%A3%85OpenVAS.assets/v2-896cfd947af4472f4d87302aa58eab29_720w.jpg" alt="img"></p> <p>此问题是由于扫描策略中端口扫描插件不起作用引起的，可以修改如下配置，以达到扫描成功的目的。</p> <p><img src="/images/blogs/CyberSecurity/SecurityTools/Kali%20%E5%AE%89%E8%A3%85OpenVAS.assets/v2-1f6370d74243d7fd6d6b9c7321096162_720w.jpg" alt="img"></p> <h3 id="问题二-the-scap-database-is-required"><a href="#问题二-the-scap-database-is-required" class="header-anchor">#</a> *<strong>问题二：The SCAP database is required*</strong></h3> <p><img src="/images/blogs/CyberSecurity/SecurityTools/Kali%20%E5%AE%89%E8%A3%85OpenVAS.assets/v2-3e45c4224c3c8509f57262d9d816236b_720w.jpg" alt="img"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo runuser -u _gvm -- greenbone-nvt-sync --rsync
+sudo -u _gvm greenbone-nvt-sync --rsync
+
+sudo runuser -u _gvm -- greenbone-nvt-sync
+sudo greenbone-scapdata-sync
+sudo greenbone-certdata-sync
+
+sudo reboot
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="实在解决不了-睡一觉就好了"><a href="#实在解决不了-睡一觉就好了" class="header-anchor">#</a> *<strong>实在解决不了，睡一觉就好了*</strong></h2> <h3 id="问题一-fix-please-install-greenbone-security-assistant-21-04"><a href="#问题一-fix-please-install-greenbone-security-assistant-21-04" class="header-anchor">#</a> *<strong>问题一： FIX: Please install Greenbone Security Assistant &gt;= 21.04.*</strong></h3> <p><img src="/images/blogs/CyberSecurity/SecurityTools/Kali%20%E5%AE%89%E8%A3%85OpenVAS.assets/v2-c84cd5cc31b6406dcafdc41a30253188_720w.jpg" alt="img"></p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo cp /usr/bin/gvm-check-setup /usr/bin/gvm-check-setup.bak    
+sed -i&quot;&quot; 's/GSA_MAJOR=&quot;21.04&quot;/GSA_MAJOR=&quot;21.4&quot;/g' $(which gvm-check-setup)
+sudo gvm-setup 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="kali-linux-2021-2-安装openvas"><a href="#kali-linux-2021-2-安装openvas" class="header-anchor">#</a> Kali-Linux-2021.2 安装OpenVAS</h2> <p>相关命令如下：</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo apt-get install gvm 	安装gvm
+sudo gvm-setup 			初始化gvm
+sudo gvm-check-setup		检查openvas 是否安装成功
+sudo gvm-feed-update		升级漏洞库
+sudo gvm-start			启动openvas
+sudo -u _gvm gvmd --user=admin --new-password=123456
+				修改web 账号admin 密码为123456
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>开启OpenVAS 外部地址访问：</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>┌──(kali kali)-[~]
+└─$ cat /lib/systemd/system/greenbone-security-assistant.service | grep &quot;ExecStart&quot;
+ExecStart=/usr/sbin/gsad --listen=0.0.0.0 --port=9392
+                                                                                                                          
+┌──(kali kali)-[~]
+└─$ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><img src="/images/blogs/CyberSecurity/SecurityTools/Kali%20%E5%AE%89%E8%A3%85OpenVAS.assets/v2-624ecb0bd7d8281f90c15cf3fcd9164b_720w.jpg" alt="img"></p> <h2 id="kali-linux-2021-1-安装openvas"><a href="#kali-linux-2021-1-安装openvas" class="header-anchor">#</a> Kali-Linux-2021.1 安装OpenVAS</h2> <p>相关命令如下：</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo apt-get install gvm 	安装gvm
+sudo gvm-setup 			初始化gvm
+sudo gvm-check-setup		检查openvas 是否安装成功
+sudo gvm-feed-update		升级漏洞库
+sudo gvm-start			启动openvas
+sudo runuser -u _gvm –- gvmd --user=admin --new-password=123456
+				修改web 账号admin 密码为123456
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>开启OpenVAS 外部地址访问：</p> <div class="language-text line-numbers-mode"><pre class="language-text"><code>┌──(kali kali)-[~]
+└─$ cat /lib/systemd/system/greenbone-security-assistant.service | grep &quot;ExecStart&quot;
+ExecStart=/usr/sbin/gsad --listen=0.0.0.0 --port=9392
+                                                                                                                          
+┌──(kali kali)-[~]
+└─$ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="kali-linux-2020-4-安装openvas"><a href="#kali-linux-2020-4-安装openvas" class="header-anchor">#</a> Kali-Linux-2020.4 安装OpenVAS</h2> <ul><li>安装gvm</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo apt-get update 
+sudo apt-get install gvm
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>gvm 初始化</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo gvm-setup          # gvm 初始化
+sudo gvm-check-setup    # 检查安装
+sudo gvm-feed-update    # 更新漏洞库
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>启动OpenVAS</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo gvm-start
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>重设管理员密码</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo runuser -u _gvm -- gvmd --user=admin --new-password=123456
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="kali-linux-2020-3-安装openvas"><a href="#kali-linux-2020-3-安装openvas" class="header-anchor">#</a> Kali-Linux-2020.3 安装OpenVAS</h2> <ul><li>安装gvm</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo apt-get update 
+sudo apt-get install gvm
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>gvm 初始化</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo apt-get install --yes postgresql-13
+sudo pg_dropcluster 13 main --stop
+sudo pg_upgradecluster 12 main
+
+sudo gvm-setup
+sudo gvm-check-setup
+sudo gvm-feed-update
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>启动OpenVAS</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo gvm-start
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>重设管理员密码</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo runuser -u _gvm -- gvmd --user=admin --new-password=123456
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="kali-linux-2020-1-安装openvas"><a href="#kali-linux-2020-1-安装openvas" class="header-anchor">#</a> Kali-Linux-2020.1 安装OpenVAS</h2> <ul><li>OpenVAS 的安装</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>sudo apt-get update
+sudo apt-get install openvas*
+sudo proxychains openvas-setup
+sudo reboot
+sudo openvas-start
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>修改密码</li></ul> <div class="language-text line-numbers-mode"><pre class="language-text"><code>openvasmd --user=admin --new-password=admin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>开启外部访问</li></ul> <p>新版本OpenVAS 开启外部访问有bug。因此可以考虑使用代理或者隧道的方法从外部访问。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.250a1e0a.js" defer></script><script src="/assets/js/3.03437c4e.js" defer></script><script src="/assets/js/1.2eac023a.js" defer></script><script src="/assets/js/14.31f4957c.js" defer></script>
+  </body>
+</html>
